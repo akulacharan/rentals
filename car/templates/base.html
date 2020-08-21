@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    {% block title %}
+
+    {% endblock %}
+
+      {% block css %}
+    <style>
+      body .carousel-control-prev-icon,
+          body .carousel-control-next-icon{
+          border : solid black 1px;
+          padding:10px;
+          background-color: gray;
+          }
+
+     .carousel-indicators li{
+          background-color: blue;
+          }
+
+     .carousel {
+      margin: 1.5rem;
+    }
+    .carousel-inner {
+      height: auto;
+    }
+
+    .carousel-control-prev {
+      margin-left: -120px;
+    }
+
+    .carousel-control-next {
+      margin-right: -120px;
+    }
+    body .carousel-indicators{
+          bottom: auto;
+          }
+
+    .col-md-4 img{
+           width:370px;
+           height:300px;
+    }
+    body{
+      zoom:90%;
+    }
+
+
+    </style>
+      {% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: gray;">
+      <a class="navbar-brand" href="/">
+        <img src="https://images.squarespace-cdn.com/content/v1/584cb4faf5e2310b3969794e/1556136971939-PCMPZQZ1257W4V24IISY/ke17ZwdGBToddI8pDm48kBLXQ716C_O6eP84fK6aZ8BZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVFnQaZCpbqzbLHQI7JwF8F5P0jO-tauyrSeQmvU7z4WlTqWIIaSPh2v08GbKqpiV54/car+-+white.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+           <b style="color:white;">Cherry's CarRentals</b>
+           </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'about'%}"><b style="color:silver;">About US</b><span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'contact'%}"><b style="color:silver;">Contact US</b><span class="sr-only">(current)</span></a>
+          </li>
+
+
+        </ul>
+      </div>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  </body>
+    {% block js %}
+
+    {% endblock %}
+<div class="container">
+  <h6 style="text-align:center;">All &#169;copyrights are reserved.</h6>
+</div>
+
+</html>
+
